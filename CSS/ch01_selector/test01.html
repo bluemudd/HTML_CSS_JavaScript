@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h2{
+            color:red /*!important*/;
+        }
+        .c{
+            color: blue;
+        }
+        #i{
+            color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>CSS 적용 우선 순위 - 태그</h2>
+    <h2 class="c">CSS 적용 우선 순위 - 클래스</h2>
+    <h2 class="c" id="i">CSS 적용 우선 순위 - 아이디</h2>
+    <h2 id="i" style="color:gold">CSS 적용우선순위 - 인라인</h2>
+    <h2>CSS 적용우선순위 - !important</h2>
+</body>
+</html>

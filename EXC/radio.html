@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #loveSong{
+            margin:auto;
+            width: 400px;
+            border: 1px solid #000;
+            display:inline:block;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="loveSong">
+        <h1>마약 홈쇼핑</h1>
+    </div>
+    <form action="sql.php" method="get">
+        <fieldset>
+            <legend>상품 선택</legend>
+            <p>주문할 상품을 선택해 주세요.</p>
+            <input value = "1" type="checkbox" id="present3" name="merchan">
+            <label for="present3">코케인 선물용 3kg</label>
+            <input value = "2" id="present5"name="merchan"type="checkbox">
+            <label for="present5">코케인 선물용 5kg</label>
+            <input value = "3" id="home3" name="merchan" type="checkbox">
+            <label for="home">대마초 가정용 3kg</label>
+            <input value = "4" id="home5" name="merchan" type="checkbox">
+            <label for="home5">대마초 가정용 5kg</label>
+            <p>포장 선택</p>
+            <input name="pozang" id="yes" value="yes" type="radio">
+            <label for="yes">선물 포장</label>
+            <input name="pozang" id="no" value="no" type="radio">
+            <label for="no">선물 포장 안함</label>
+        </fieldset>
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>

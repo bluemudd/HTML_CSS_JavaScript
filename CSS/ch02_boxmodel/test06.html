@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            border: 20px solid #000;
+            width: 600px;
+            height: 200px;
+            margin: 20px;
+            background-color: yellow;
+
+        }
+        .content-box{
+            box-sizing: content-box;
+            /* 600+20+20 다합처서 640 */
+        }
+        .border-box{
+            box-sizing: border-box;
+            /* 컨텐츠 크기 다합처서 600px */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="content-box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minus perspiciatis magnam iure tenetur dolor et cum excepturi hic quis.
+
+    </div>
+    <div class="border-box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus inventore saepe obcaecati sapiente alias maxime quo placeat quaerat reiciendis quos!
+    </div>
+</body>
+</html>

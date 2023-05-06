@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            padding:10px;
+            width:70%;
+            border:1px solid black;
+        }
+        fieldset{
+            border: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾 <br>
+        습니다.</p>
+        <hr>
+        <form action="">
+            <p>개인 정보</p>
+            <label for="id">
+                이름:
+            </label>
+                <input type="text" id="id" placeholder="공백 없이 입력하세요"><br>
+            <label for="phone">
+                연락처:
+            </label>
+            <input type="tel" id="phone"><br>
+            <p>지원 분야</p>
+            <fieldset>
+            <input type="radio" id="publishing" name="apply">
+            <label for="publishing">웹 퍼블리싱</label><br>
+            <input type="radio" id="dev" name="apply"> 
+            <label for="dev">웹 어플리케이션 개발</label><br>
+            <input type="radio" id="devOps" name="apply"> 
+            <label for="devOps">개발 환경 개선</label><br></fieldset>
+            <p>지원 동기</p>
+            <fieldset>
+            <textarea name="appliment" id="appliment" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+            <br>
+            <input type="submit" value="접수하기">
+            <input type="reset" value="다시쓰기"></fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            margin: auto;
+            border-collapse: collapse;
+            width:70%;
+            border: 1px solid gray;
+        }
+        td{
+            padding:5px;
+            text-align: center;
+            border: 1px solid gray;
+        }
+        table > caption{
+            margin: 8px auto;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>테이블 기본형 (2X3)</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>행 병합 테이블</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td rowspan="3">8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>열병합 테이블</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td colspan="2">7</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td>8</td>
+            <td colspan="2">9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td colspan="3">12</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>col | colgroup</caption>
+        <colgroup>
+            <col width="20%" style="background-color:blue">
+            <col span="2" width="40%" style="background-color:red">
+        </colgroup>
+        <tr>
+            <td>점수</td>
+            <td>Name</td>
+            <td>address</Address></td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>홍길동</td>
+            <td>제주</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>향단이</td>
+            <td>남원</td>
+        </tr>
+    </table>
+</body>
+</html>
