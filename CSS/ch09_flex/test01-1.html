@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flex로 수직중앙 정렬</title>
+    <style>
+        body{
+            /* 높이를 줘야 flex가 먹힌다 */
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            color: white;
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            text-align: center;
+            line-height: 200px;
+            /* position: absolute; */
+            /* top: 50%; */
+            /* right: 50%; */
+            /* transform: translate(-50%, -50%); */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>flex로 수직중앙 정렬</h1>
+    <div class="box">자식 요소</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: auto;
+            position: absolute;
+            top:30%;
+            left: 25%;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            /* height: 40%; */
+            width: 800px;
+            padding:25px;
+            background-color: #f5f5f5;
+            box-shadow: 0px 0px 25px 0.2px rgb(102, 95, 95);
+        }
+        span{
+            display:block;
+            float:left;
+            margin-top:10px;
+        }
+        input::placeholder{
+            opacity: 0.5;
+            transition: 0.2s; 
+            /* 시간텀을 줌 */
+        }
+        input:focus::placeholder{
+            opacity:0;
+        }
+        [type="text"], [type="password"]{
+            padding:15px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        input:hover{
+            border: 1px solid dodgerblue;
+            box-shadow: 0px 0px 4px 1px dodgerblue;
+        }
+        input:visited{
+            border: 1px solid black;
+            box-shadow: none;
+        }
+        p label{
+            /* float:left; */
+            font-size: 13px;
+            /* border: 1px solid #000; */
+        }
+        p a{
+            float:right;
+            font-size: 13px;
+            color: gray;
+            text-decoration: none;
+            /* border: 1px solid #000; */
+        }
+        p a:hover{
+            text-decoration:underline;
+
+        }
+        button{
+            font-size:15px;
+            padding:10px;
+            width:45%;
+            box-sizing: border-box;
+            clear: both;
+            border-radius: 5px;
+            color: white;
+            border: 0px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <span><strong>Email</strong></span>
+            <input type="text" placeholder="아이디">
+            <span><strong>Password</strong></span>
+            <input type="password" placeholder="비밀번호">
+            <p>             
+                <label for="kli">
+                    <input id="kli"type="checkbox">keep me Logged in   
+                </label>
+                <a href="#">Forgot Your password?</a>
+            </p>
+            <button type submit>Log in</button>
+        </form>
+    </div>
+</body>
+</html>

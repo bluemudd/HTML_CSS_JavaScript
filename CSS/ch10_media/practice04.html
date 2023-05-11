@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap');
+        body{
+            font-family: 'Montserrat', sans-serif;
+            height: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(120deg, #a1c4fd,#c2e9fb);
+        }
+        table{
+            /* border-radius: 5px; */
+            border: none;
+            width:100%;
+            border-collapse: collapse;
+            box-shadow: 15px 15px 0.2px black;
+
+        }
+        caption{
+            
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        tbody tr:hover{
+            background-color: #EEE;
+
+        }
+        th{
+            color:white;
+        }
+        th, td{
+            padding: 12px;
+            text-align: center;
+        }
+        th:last-child{
+            border-radius: 0 10px 0 0  ;
+
+        }
+        th:first-child{
+            border-radius: 10px 0 0;
+
+        }
+        td:last-child{
+            color:red;
+        }
+        tbody{
+            background-color: white;
+        }
+        tbody tr:nth-child(odd){
+            background-color: #eee;
+        }
+        thead{
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Company Member Information</caption>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Full name</th>
+                <th>Age</th>
+                <th>Job title</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6</td>
+                <td>Vincent Wilamson</td>
+                <td>31</td>
+                <td>IOS Developer</td>
+                <td>Washington</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Tyler Reyes</td>
+                <td>22</td>
+                <td>UI/UX Designer</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Keith Carter</td>
+                <td>20</td>
+                <td>Graphic Designer</td>
+                <td>San Fransisco</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>James Kim</td>
+                <td>33</td>
+                <td>IOS Developer</td>
+                <td>Washington</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Cindy Lee</td>
+                <td>25</td>
+                <td>UI/UX Designer</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sally Jung</td>
+                <td>27</td>
+                <td>Web Publisher</td>
+                <td>Miami</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

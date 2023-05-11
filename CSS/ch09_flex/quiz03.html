@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        border: 5px solid #000;
+        display: flex;
+        flex-direction:column;
+    }
+    .section{
+        display: flex;
+    }
+    .Header{
+        text-align: center;
+        height:100px;
+        background-color: tomato;
+        padding:32px;
+        line-height:100px;
+    }
+    .article{
+        border: 1px solid #000;
+    }
+    .article.aside1{
+        height:500px;
+        flex:1;
+        background-color: yellow;
+    }
+    .article.aside2{
+        height:500px;
+        flex:1;
+        background-color: green;
+    }
+    .article.contents{
+        flex:4;
+        background-color: gray;
+    }
+    .footer{
+        padding:32px;
+        height:100px;
+        background-color: aqua;
+        text-align: center;
+        line-height:100px;
+    }
+    @media(max-width:767px){
+            .body{
+                display:flex;
+                flex-direction: column;
+            }
+            .section{
+                flex-direction: column;
+                order:2;
+            }
+            .Header{
+                order:1;
+            }
+            .article.aside1{
+                order:2;
+            }
+            .article.contents{
+                order:1;
+            }
+            .article.aside2{
+                order:3;
+            }
+            .footer{                
+                order:5;
+            }
+        }
+</style>
+</head>
+<body>
+    <div class="Header">
+        header
+    </div>
+    <div class="section">
+        <div class="article aside1">
+            Aside #1
+        </div>
+        <div class="article contents">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, incidunt? Magni ex culpa dolores harum unde iste sapiente, dolore voluptates.
+        </div>
+        <div class="article aside2">
+            Aside#2
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</body>
+</html>
